@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#countdown {
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
