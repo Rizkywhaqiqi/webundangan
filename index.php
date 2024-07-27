@@ -1,15 +1,17 @@
+<?php
+session_start();
+if (!isset($_SESSION['admin_logged_in']) || !$_SESSION['admin_logged_in']) {
+    header('Location: login.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Wedding Invitation</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
+    <title>Admin Dashboard</title>
 </head>
 <body>
-    <h1>Welcome to Our Wedding!</h1>
-    <div id="countdown">
-        <h2>Time left until our wedding:</h2>
-        <p id="timer"></p>
-    </div>
+    <h1>Welcome to the Admin Dashboard</h1>
+    <a href="logout.php">Logout</a>
 </body>
 </html>
